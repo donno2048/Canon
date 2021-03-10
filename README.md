@@ -2,10 +2,12 @@
 
 Play canon in d, not in d
 
+This is for python3.8, for other versions you will need to get the corresponding pyaudio.whl
+
 ## Install requirements
 
 ```
-python -m pip install pyaudio
+python -m pip install pyaudio.whl
 ```
 
 ## Run
