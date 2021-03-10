@@ -7,7 +7,7 @@ This is for python3.8, for other versions you will need to get the corresponding
 ## Install requirements
 
 ```
-python -m pip install PyAudio‑0.2.11‑cp38‑cp38‑win_amd64.whl
+python -m pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 ```
 
 ## Run
