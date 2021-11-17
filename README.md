@@ -13,13 +13,14 @@ cd Canon
 
 ## Install requirements
 
-```
-python -m pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+```sh
+pip install pipwin
+pipwin install pyaudio
 ```
 
 ## Run
 
-```
+```sh
 python main.py
 ```
 
