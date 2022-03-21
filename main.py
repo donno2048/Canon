@@ -52,7 +52,7 @@ for _ in range(2):
     play([42, 41], 0.125)
     play([42], 0.25)
     play([41, 39, 41, 42, 44, 42, 41, 42, 39, 41], 0.125)
-# uncomment the following line if you want to hear it too
+# uncomment the following lines if you want to hear it too
 # for __ in range(2):
 #     for _ in range(2):
 #         play([34], 0.5)
