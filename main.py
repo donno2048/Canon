@@ -1,10 +1,10 @@
 from pyaudio import PyAudio
 from math import sin, pi
-from time import sleep
 i, stream = input("Choose which canon should I play\n").lower(), PyAudio().open(format = 32, channels = 1, rate = 96000, output = True)
 assert "a" <= i <= "g"
 def play(l: list, d: float) -> None: [stream.write("".join([chr(int(127.5 * (1.0 + sin((l * pi * 2 ** ((f - 49) / 12) * 440 + (2 * (ord(i) > 100) - 1) * round(1.6 * abs(ord(i) - 100) + 0.1) + 2) / 48000)))) for l in range(int(96000 * d))])) for f in l]
 # The boring part, if you want to hear it too uncomment the following lines
+# from time import sleep
 # play([42, 37, 39, 34, 35, 30, 35, 37, 46, 44, 42, 41, 39, 37, 39, 41, 42, 41, 39, 37, 35, 34, 35, 32], 1.0)
 # play([30, 34, 37, 35, 34, 30, 34, 32, 30, 39, 30, 37, 35, 39, 37, 35, 34, 30, 32, 41, 42, 46, 49, 37, 39, 35, 37, 34, 30, 42, 42, 41], 0.5)
 # play([42, 41, 42, 30, 29, 37, 32, 34, 30, 42, 41, 39, 41, 46, 49, 51, 47, 46, 44, 47, 46, 44, 42, 41, 39, 37, 47, 46, 44, 47, 46, 44, 30, 32, 34, 35, 37, 32, 37, 35, 34, 39, 37, 35, 37, 35, 34, 32, 30, 39, 39, 41, 42, 41, 39, 37, 35, 34, 32, 39, 37, 39, 37, 35], 0.25)
