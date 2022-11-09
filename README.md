@@ -12,8 +12,7 @@ cd Canon
 ## Install requirements
 
 ```sh
-pip install pipwin
-pipwin install pyaudio
+pip install python-beep
 ```
 
 ## Run
@@ -23,7 +22,3 @@ python main.py
 ```
 
 Then, give it some input, use d for the normal canon
-
-## Note
-
-*Most of the canon is commented out, if you want to hear it, uncomment the code.*
